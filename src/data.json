@@ -1,0 +1,34 @@
+{
+  "recipes": [
+    {
+      "id": "salmonLinguine",
+      "title": "Salmon Linguine",
+      "this is a comment": "// make ingredients into array",
+      "ingredients": [
+        "smoked salmon",
+        "asparagus",
+        "courgette",
+        "single cream",
+        "dill",
+        "lemon",
+        "linguine"
+      ],
+      "method": "mix it all together"
+    },
+    {
+      "id": "greenChickenCurry",
+      "title": "Thai Green Chicken Curry",
+      "ingredients": [
+        "Chicken breast",
+        "Green Peppers",
+        "Green Chilli",
+        "Lime Leaves",
+        "Lemongrass",
+        "Coconut Milk",
+        "Green Beans",
+        "Baby Sweetcorn",
+      ],
+      "method": "mix it all together"
+    }
+  ]
+}
