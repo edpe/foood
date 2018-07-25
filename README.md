@@ -10,7 +10,9 @@ Foood was devised as a way to practice React.
 
 The finished product will use Google Sheets as a back end database and the Tesco Labs API to add the ingredients to a shopping basket.
 
-![]()
+This will be a single page app with the layout something like this [paper prototype](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/):
+
+![](resources/paperPrototype.jpg)
 
 ## User Stories
 
