@@ -3,7 +3,6 @@
     {
       "id": "salmonLinguine",
       "title": "Salmon Linguine",
-      "this is a comment": "// make ingredients into array",
       "ingredients": [
         "smoked salmon",
         "asparagus",
@@ -26,7 +25,7 @@
         "Lemongrass",
         "Coconut Milk",
         "Green Beans",
-        "Baby Sweetcorn",
+        "Baby Sweetcorn"
       ],
       "method": "mix it all together"
     }

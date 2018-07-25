@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import Meal from './meal';
 import Menu from './menu';
+import data from './data.json';
 
 
 class App extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {selectedMeal: ""}
+    this.state = { selectedMeal: "" }
 
   }
 
@@ -15,11 +15,13 @@ class App extends Component {
     this.setState({selectedMeal: evt.target.value})
   }
 
+  }
+
   render() {
+  //  const recip = data.recipes.find((recipeObj) => )
     return (
       <div>
         <h2>foood</h2>
-        {this.state.selectedMeal}
         <hr/>
         <Menu onChange={this.handleChange} />
       </div>
