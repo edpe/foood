@@ -17,8 +17,16 @@ class App extends Component {
       return obj.id === this.state.selectedMeal;
     }).ingredients;
 
+    const selectedMethod = data.recipes.find(obj => {
+      return obj.id === this.state.selectedMeal;
+    }).method;
+
     const listItems = selectedIngredients.map(ingredient => {
       return <li>{ingredient}</li>;
+    });
+
+    const method = selectedMethod.map(step => {
+      return <li>{step}</li>;
     });
 
     return (
@@ -27,6 +35,7 @@ class App extends Component {
         <hr />
         <Menu onChange={this.handleChange} />
         <ul>{listItems}</ul>
+        <ol>{method}</ol>
       </div>
     );
   }
