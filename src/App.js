@@ -18,7 +18,7 @@ class App extends Component {
     }).ingredients;
 
     const listItems = selectedIngredients.map(ingredient => {
-      return <p>{ingredient}</p>;
+      return <li>{ingredient}</li>;
     });
 
     return (
@@ -26,7 +26,7 @@ class App extends Component {
         <h2>foood</h2>
         <hr />
         <Menu onChange={this.handleChange} />
-        <div>{listItems}</div>
+        <ul>{listItems}</ul>
       </div>
     );
   }
