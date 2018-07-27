@@ -21,23 +21,11 @@ class App extends Component {
 
     const method = selectedRecipe.method;
 
-<<<<<<< HEAD
     const listIngredients = ingredients.map(ingredient => {
       return <li>{ingredient}</li>;
     });
 
     const listMethod = method.map(step => {
-=======
-    const selectedMethod = data.recipes.find(obj => {
-      return obj.id === this.state.selectedMeal;
-    }).method;
-
-    const listItems = selectedIngredients.map(ingredient => {
-      return <li>{ingredient}</li>;
-    });
-
-    const method = selectedMethod.map(step => {
->>>>>>> 182892f57e4f5f9d27c08af3c19c3ab0ae8760a6
       return <li>{step}</li>;
     });
 
@@ -46,13 +34,8 @@ class App extends Component {
         <h2>foood</h2>
         <hr />
         <Menu onChange={this.handleChange} />
-<<<<<<< HEAD
         <ul>{listIngredients}</ul>
         <ol>{listMethod}</ol>
-=======
-        <ul>{listItems}</ul>
-        <ol>{method}</ol>
->>>>>>> 182892f57e4f5f9d27c08af3c19c3ab0ae8760a6
       </div>
     );
   }
