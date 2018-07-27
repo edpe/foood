@@ -4,30 +4,48 @@
       "id": "salmonLinguine",
       "title": "Salmon Linguine",
       "ingredients": [
-        "smoked salmon",
         "asparagus",
         "courgette",
+        "garlic",
         "single cream",
         "dill",
         "lemon",
-        "linguine"
+        "linguine",
+        "smoked salmon"
       ],
-      "method": "mix it all together"
+      "method": [
+        "Put the linguine on to boil",
+        "Grate the courgette and finely slice the asparagus.",
+        "Put a knob of butter in a pan and fry the crushed garlic over a moderate heat.",
+        "Add the asparagus and fry for a minute or so.",
+        "Then add the courgette to the pan and fry for another few minutes.",
+        "Pour in the single cream and add the finely chopped dill.",
+        "Slice the smoked salmon into thin strips and add it to the pan.",
+        "Grate in some lemon zest and a good squueze of the juice.",
+        "Season with salt and cracked black pepper."
+      ]
     },
     {
       "id": "greenChickenCurry",
       "title": "Thai Green Chicken Curry",
       "ingredients": [
-        "Chicken breast",
+        "Chicken breasts",
         "Green Peppers",
+        "Shallots",
+        "Coriander",
         "Green Chilli",
         "Lime Leaves",
         "Lemongrass",
+        "Garlic",
+        "Ginger",
         "Coconut Milk",
+        "Carrots",
         "Green Beans",
         "Baby Sweetcorn"
       ],
-      "method": "mix it all together"
+      "method": [
+        "Put the shallots, peppers, garlic, chilli, ginger and lemongrass in a food processor and blend to a paste"
+      ]
     }
   ]
 }
