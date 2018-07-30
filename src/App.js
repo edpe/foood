@@ -31,15 +31,49 @@ class App extends Component {
 
     return (
       <div>
-        <h2>foood</h2>
-        <hr />
-        <Menu onChange={this.handleChange} />
-        <ul>{listIngredients}</ul>
-        <ol>{listMethod}</ol>
-        <img src={selectedRecipe.image}/>
+        <h2 style={styles.title}>foood</h2>
+        <hr/>
+        <Menu style={styles.menu} onChange={this.handleChange} />
+        <main style={styles.main}>
+          <article>
+            <ul>{listIngredients}</ul>
+            <ol>{listMethod}</ol>
+          </article>
+          <aside>
+            <img style={styles.foodImage} src={selectedRecipe.image}/>
+          </aside>
+        </main>
       </div>
     );
   }
+}
+
+const main = {
+  display: "flex",
+  flex: 1,
+  fontFamily: "garamond"
+}
+
+const foodImage = {
+  width: "500px",
+  height: "250px",
+  marginLeft: 20
+}
+
+const title = {
+  fontFamily: "garamond",
+  fontSize: "4rem"
+}
+
+const menu = {
+  fontFamily: "garamond"
+}
+
+const styles = {
+  foodImage: foodImage,
+  main: main,
+  title: title,
+  menu: menu
 }
 
 export default App;
