@@ -22,11 +22,11 @@ class App extends Component {
     const method = selectedRecipe.method;
 
     const listIngredients = ingredients.map(ingredient => {
-      return <li>{ingredient}</li>;
+      return <li key={ingredient.id}>{ingredient.name}</li>;
     });
 
     const listMethod = method.map(step => {
-      return <li>{step}</li>;
+      return <li key={step.id}>{step.name}</li>;
     });
 
     return (
@@ -36,6 +36,7 @@ class App extends Component {
         <Menu onChange={this.handleChange} />
         <ul>{listIngredients}</ul>
         <ol>{listMethod}</ol>
+        <img src={selectedRecipe.image}/>
       </div>
     );
   }
