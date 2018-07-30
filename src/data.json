@@ -31,23 +31,25 @@
       "id": "greenChickenCurry",
       "title": "Thai Green Chicken Curry",
       "ingredients": [
-        "Chicken breasts",
-        "Green Peppers",
-        "Shallots",
-        "Coriander",
-        "Green Chilli",
-        "Lime Leaves",
-        "Lemongrass",
-        "Garlic",
-        "Ginger",
-        "Coconut Milk",
-        "Carrots",
-        "Green Beans",
-        "Baby Sweetcorn"
+        {"id": 1, "name": "Chicken breasts"},
+        {"id": 2, "name": "Green Peppers"},
+        {"id": 3, "name": "Shallots"},
+        {"id": 4, "name": "Coriander"},
+        {"id": 5, "name": "Green Chilli"},
+        {"id": 6, "name": "Lime Leaves"},
+        {"id": 7, "name": "Lemongrass"},
+        {"id": 8, "name": "Garlic"},
+        {"id": 10, "name": "Ginger"},
+        {"id": 11, "name": "Coconut Milk"},
+        {"id": 12, "name": "Carrots"},
+        {"id": 13, "name": "Green Beans"},
+        {"id": 14, "name": "Baby Sweetcorn"}
       ],
       "method": [
-        "Put the shallots, peppers, garlic, chilli, ginger and lemongrass in a food processor and blend to a paste"
+        {"id": 1, "name": "Put the shallots, peppers, garlic, chilli, ginger and lemongrass in a food processor and blend to a paste"},
+        {"id": 2, "name": "Mix everything together and cook it"}
       ],
+
       "image": "/images/greenChickenCurry.jpg"
     }
   ]
