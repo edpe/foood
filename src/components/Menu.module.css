@@ -1,0 +1,13 @@
+.chooseRecipe {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 35%;
+  text-align-last: center;
+  border: 0px;
+  outline: 0px;
+  margin-top: 2%;
+  background-color: white;
+
+}

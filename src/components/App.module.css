@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex: 1;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.ingredients {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center-left;
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.foodImage {
+  width: 100%;
+  height: auto;
+  padding-right: 5%;
+}
+
+.title {
+  font-family: garamond;
+  font-size: 4rem;
+  margin-top: 0.1em;
+  margin-right: 5%;
+  margin-bottom: 0.1em;
+  text-align: right;
+}
+
+.article {
+  flex: 50%;
+}
+
+.aside {
+  flex: 50%;
+}
