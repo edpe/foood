@@ -4,7 +4,7 @@
       "id": "salmonLinguine",
       "title": "Salmon Linguine",
       "ingredients": [
-        {"id": 1, "name": "asparagus"},
+        {"id": 1, "name": "asparagus", "quantity": "1", "measurement": "bunch of"},
         {"id": 2, "name": "courgette"},
         {"id": 3, "name": "garlic"},
         {"id": 4, "name": "single"},
