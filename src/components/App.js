@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import Menu from './Menu';
-import data from '../data.json';
-import styles from './App.module.css';
-
-
+import React, { Component } from "react";
+import Menu from "./Menu";
+import data from "../data.json";
+import styles from "./App.module.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { selectedMeal: 'salmonLinguine' };
+    this.state = { selectedMeal: "salmonLinguine" };
   }
 
   handleChange = evt => {
@@ -33,24 +31,26 @@ class App extends Component {
     });
 
     return (
-      <div className={styles.wrapper}>
-        <h2 className={styles.title}>foood</h2>
-        <hr/>
-        <Menu className onChange={this.handleChange}/>
-        <hr/>
-        <main className={styles.main}>
+        <div className={styles.wrapper}>
+          <h2 className={styles.header}>foood</h2>
+          <div className={styles.menu}>
+            <Menu onChange={this.handleChange} />
+          </div>
           <article className={styles.article}>
             <ul className={styles.ingredients}>{listIngredients}</ul>
             <ol className={styles.ingredients}>{listMethod}</ol>
           </article>
           <aside className={styles.aside}>
-            <img className={styles.foodImage} src={selectedRecipe.image} alt={this.state.selectedMeal}/>
+            <img
+              className={styles.foodImage}
+              src={selectedRecipe.image}
+              alt={this.state.selectedMeal}
+            />
           </aside>
-        </main>
-      </div>
-    );
+          <div className={styles.footer} />
+        </div>
+      );
+    }
   }
-}
-
 
 export default App;

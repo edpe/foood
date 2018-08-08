@@ -1,22 +1,39 @@
-.main {
-  flex: 1;
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.outerWrapper {
+  height: 100%;
+  width: 100%;
 }
 
 .wrapper {
   display: grid;
-  width: 100%;
-  grid-template-areas:
-  ". header header header ."
-  ". title title title ."
-  ". ingredients . image ."
-  ". ingredients . image ."
-  ". footer footer footer .";
-  grid-template-rows: 10% 10% 35% 35% 10%;
+  height: 100vh;
   grid-template-columns: 10% 38% 4% 38% 10%;
+  grid-template-rows: 10% 10% 35% 35% 10%;
+  grid-gap: 1px 1px;
+  grid-template-areas: '. header header header .' '. menu menu menu .' '. ingredients . image .' '. ingredients . image .' '. footer footer footer .';
 }
 
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
+.header {
+  grid-area: header;
+  font-family: garamond;
+  font-size: 4rem;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.main {
+  flex: 1;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.article {
+  grid-area: ingredients;
 }
 
 .ingredients {
@@ -26,25 +43,15 @@ body {
   font-size: 1.5rem;
 }
 
+.aside {
+  grid-area: image;
+}
+
 .foodImage {
   width: 100%;
   height: auto;
 }
 
-.title {
-  grid-area: title;
-  font-family: garamond;
-  font-size: 4rem;
-  margin-top: 0.1em;
-  margin-right: 5%;
-  margin-bottom: 0.1em;
-  text-align: right;
-}
-
-.article {
-  grid-area: ingredients;
-}
-
-.aside {
-  grid-area: image;
+.footer {
+  grid-area: footer;
 }
