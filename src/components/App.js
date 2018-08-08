@@ -33,7 +33,7 @@ class App extends Component {
     });
 
     return (
-      <div>
+      <div className={styles.wrapper}>
         <h2 className={styles.title}>foood</h2>
         <hr/>
         <Menu className onChange={this.handleChange}/>

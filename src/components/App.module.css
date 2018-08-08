@@ -1,11 +1,25 @@
 .main {
-  display: flex;
   flex: 1;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+  "blank header header header blank"
+  "blank title title title blank"
+  "blank ingredients blank image blank"
+  "blank ingredients blank image blank"
+  "blank footer footer footer blank";
+  grid-template-rows: 10% 10% 35% 35% 10%;
+  grid-template-columns: 10% 38% 4% 38% 10%;
+}
+
+body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .ingredients {
-  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center-left;
   list-style-type: none;
   margin-right: 20px;
@@ -15,10 +29,10 @@
 .foodImage {
   width: 100%;
   height: auto;
-  padding-right: 5%;
 }
 
 .title {
+  grid-area: title;
   font-family: garamond;
   font-size: 4rem;
   margin-top: 0.1em;
@@ -28,9 +42,9 @@
 }
 
 .article {
-  flex: 50%;
+  grid-area: ingredients;
 }
 
 .aside {
-  flex: 50%;
+  grid-area: image;
 }
