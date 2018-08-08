@@ -2,10 +2,6 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.outerWrapper {
-  height: 100%;
-  width: 100%;
-}
 
 .wrapper {
   display: grid;
@@ -13,7 +9,11 @@ body {
   grid-template-columns: 10% 38% 4% 38% 10%;
   grid-template-rows: 10% 10% 35% 35% 10%;
   grid-gap: 1px 1px;
-  grid-template-areas: '. header header header .' '. menu menu menu .' '. ingredients . image .' '. ingredients . image .' '. footer footer footer .';
+  grid-template-areas:  '. header header header .'
+                        '. menu menu menu .'
+                        '. ingredients . image .'
+                        '. ingredients . image .'
+                        '. footer footer footer .';
 }
 
 .header {
