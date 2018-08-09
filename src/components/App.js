@@ -30,6 +30,8 @@ class App extends Component {
       return <li key={step.id}>{step.name}</li>;
     });
 
+    console.log(selectedRecipe.image)
+
     return (
       <div className={styles.wrapper}>
         <h2 className={styles.header}>foood</h2>
@@ -38,13 +40,14 @@ class App extends Component {
         </div>
         <article className={styles.article}>
           <ul className={styles.ingredients}>{listIngredients}</ul>
-          <ol className={styles.ingredients}>{listMethod}</ol>
+          <ol className={styles.method}>{listMethod}</ol>
         </article>
-        <aside className={styles.aside}>
+        <aside className={styles.aside}
+        style ={ { backgroundImage: "url(" + selectedRecipe.image + ")" }}>
           <img
             className={styles.foodImage}
             src={selectedRecipe.image}
-            alt={this.state.selectedMeal}
+            alt="image of selected recipe"
           />
         </aside>
         <div className={styles.footer} />

@@ -6,14 +6,13 @@ body {
 .wrapper {
   display: grid;
   height: 100%;
-  grid-template-columns: 5% 38% 4% 38% 5%;
-  grid-template-rows: 10% 10% 35% 35% 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .1fr .1fr 1fr .1fr;
   grid-gap: 1px 1px;
-  grid-template-areas:  '. header header header .'
-                        '. menu menu menu .'
-                        '. ingredients . image .'
-                        '. ingredients . image .'
-                        '. footer footer footer .';
+  grid-template-areas:  'header header'
+                        'menu menu'
+                        'article aside'
+                        'footer footer';
 }
 
 .header {
@@ -23,6 +22,7 @@ body {
   text-align: right;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-right: 2.5%;
 }
 
 .main {
@@ -34,23 +34,42 @@ body {
 }
 
 .article {
-  grid-area: ingredients;
+  grid-area: article;
+  padding-left: 5%;
 }
 
 .ingredients {
+  flex: 50%;
   text-align: center-left;
   list-style-type: none;
   font-size: 1.5rem;
   padding-left: 0px;
 }
 
+.method{
+  flex: 50%;
+  text-align: center-left;
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding-left: 0%;
+}
+
 .aside {
-  grid-area: image;
+  grid-area: aside;
+  background-size: cover;
+  padding-right: 5%;
+  position: center;
 }
 
 .foodImage {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .footer {
