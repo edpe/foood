@@ -23,14 +23,12 @@ class App extends Component {
     const method = selectedRecipe.method;
 
     const listIngredients = ingredients.map(ingredient => {
-      return <li key={ingredient.id}>{ingredient.name}</li>;
+      return <li key={ingredient.id}>{ingredient.quantity}{ingredient.measurement} {ingredient.name}</li>;
     });
 
     const listMethod = method.map(step => {
       return <li key={step.id}>{step.name}</li>;
     });
-
-    console.log(selectedRecipe.image)
 
     return (
       <div className={styles.wrapper}>

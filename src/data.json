@@ -4,12 +4,12 @@
       "id": "salmonLinguine",
       "title": "Salmon Linguine",
       "ingredients": [
-        {"id": 1, "name": "asparagus", "quantity": "1", "measurement": "bunch of"},
+        {"id": 1, "name": "asparagus", "quantity": "1", "measurement": " bunch of"},
         {"id": 2, "name": "courgette", "quantity": "1", "measurement": ""},
-        {"id": 3, "name": "garlic", "quantity": "2", "measurement": "cloves" },
+        {"id": 3, "name": "garlic", "quantity": "2", "measurement": " cloves of" },
         {"id": 4, "name": "single cream", "quantity": "300", "measurement": "ml"},
-        {"id": 5, "name": "dill", "quantity": "1", "measurement": "small bunch of"},
-        {"id": 6, "name": "lemon", "quantity": "1", "measurement": "juice and zest of"},
+        {"id": 5, "name": "dill", "quantity": "1", "measurement": " small bunch of"},
+        {"id": 6, "name": "lemon", "quantity": "1", "measurement": " juice and zest of"},
         {"id": 7, "name": "linguine", "quantity": "100", "measurement": "g"},
         {"id": 8, "name": "salmon", "quantity": "100", "measurement": "g"}
       ],
