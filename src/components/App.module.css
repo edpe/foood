@@ -5,8 +5,8 @@ body {
 
 .wrapper {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 10% 38% 4% 38% 10%;
+  height: 100%;
+  grid-template-columns: 5% 38% 4% 38% 5%;
   grid-template-rows: 10% 10% 35% 35% 10%;
   grid-gap: 1px 1px;
   grid-template-areas:  '. header header header .'
@@ -20,8 +20,9 @@ body {
   grid-area: header;
   font-family: garamond;
   font-size: 4rem;
-  margin-right: 5%;
   text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .main {
@@ -39,8 +40,8 @@ body {
 .ingredients {
   text-align: center-left;
   list-style-type: none;
-  margin-right: 20px;
   font-size: 1.5rem;
+  padding-left: 0px;
 }
 
 .aside {
