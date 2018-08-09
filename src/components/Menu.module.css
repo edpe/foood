@@ -8,5 +8,7 @@
   margin-top: 2%;
   background-color: white;
   border-radius: 0px;
+  -webkit-appearance: none;
+  appearance: none;
 
 }

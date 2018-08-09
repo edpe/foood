@@ -31,7 +31,7 @@ body {
 
 .menu {
   grid-area: menu;
-  padding-left: 2%;
+  padding-left: 2.5%;
 }
 
 .article {
