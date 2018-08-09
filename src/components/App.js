@@ -3,8 +3,6 @@ import Menu from './Menu';
 import data from '../data.json';
 import styles from './App.module.css';
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -32,25 +30,30 @@ class App extends Component {
       return <li key={step.id}>{step.name}</li>;
     });
 
+    console.log(selectedRecipe.image)
+
     return (
-      <div>
-        <h2 className={styles.title}>foood</h2>
-        <hr/>
-        <Menu className onChange={this.handleChange}/>
-        <hr/>
-        <main className={styles.main}>
-          <article className={styles.article}>
-            <ul className={styles.ingredients}>{listIngredients}</ul>
-            <ol className={styles.ingredients}>{listMethod}</ol>
-          </article>
-          <aside className={styles.aside}>
-            <img className={styles.foodImage} src={selectedRecipe.image} alt={this.state.selectedMeal}/>
-          </aside>
-        </main>
+      <div className={styles.wrapper}>
+        <h2 className={styles.header}>foood</h2>
+        <div className={styles.menu}>
+          <Menu onChange={this.handleChange} />
+        </div>
+        <article className={styles.article}>
+          <ul className={styles.ingredients}>{listIngredients}</ul>
+          <ol className={styles.method}>{listMethod}</ol>
+        </article>
+        <aside className={styles.aside}
+        style ={ { backgroundImage: "url(" + selectedRecipe.image + ")" }}>
+          <img
+            className={styles.foodImage}
+            src={selectedRecipe.image}
+            alt="image of selected recipe"
+          />
+        </aside>
+        <div className={styles.footer} />
       </div>
     );
   }
 }
-
 
 export default App;

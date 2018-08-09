@@ -1,36 +1,77 @@
-.main {
-  display: flex;
-  flex: 1;
+body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.ingredients {
-  font-family: 'Open Sans Condensed', sans-serif;
-  text-align: center-left;
-  list-style-type: none;
-  margin-right: 20px;
-  font-size: 1.5rem;
+
+.wrapper {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .1fr .1fr 1fr .1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas:  'header header'
+                        'menu menu'
+                        'article aside'
+                        'footer footer';
 }
 
-.foodImage {
-  width: 100%;
-  height: auto;
-  padding-right: 5%;
-}
-
-.title {
+.header {
+  grid-area: header;
   font-family: garamond;
   font-size: 4rem;
-  margin-top: 0.1em;
-  margin-right: 5%;
-  margin-bottom: 0.1em;
   text-align: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 2.5%;
+}
+
+.main {
+  flex: 1;
+}
+
+.menu {
+  grid-area: menu;
 }
 
 .article {
+  grid-area: article;
+  padding-left: 5%;
+}
+
+.ingredients {
   flex: 50%;
+  text-align: center-left;
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding-left: 0px;
+}
+
+.method{
+  flex: 50%;
+  text-align: center-left;
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding-left: 0%;
 }
 
 .aside {
-  flex: 50%;
+  grid-area: aside;
+  background-size: cover;
+  padding-right: 5%;
+  position: center;
+}
+
+.foodImage {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.footer {
+  grid-area: footer;
 }
