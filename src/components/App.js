@@ -22,9 +22,13 @@ class App extends Component {
 
     const method = selectedRecipe.method;
 
-
     const listIngredients = ingredients.map(ingredient => {
-      return <li key={ingredient.id}>{ingredient.quantity}{ingredient.measurement} {ingredient.name}</li>;
+      return (
+        <li key={ingredient.id}>
+          {ingredient.quantity}
+          {ingredient.measurement} {ingredient.name}
+        </li>
+      );
     });
 
     const listMethod = method.map(step => {
@@ -37,11 +41,14 @@ class App extends Component {
         <div className={styles.menu}>
           <Menu onChange={this.handleChange}>
             {data.recipes.map(recipe => (
-              <option key={recipe.id} value={recipe.id}>{recipe.title}</option>
+              <option key={recipe.id} value={recipe.id}>
+                {recipe.title}
+              </option>
             ))}
           </Menu>
         </div>
         <article className={styles.article}>
+          <p>Cooking time {selectedRecipe.cookingTime}</p>
           <ul className={styles.ingredients}>{listIngredients}</ul>
           <ol className={styles.method}>{listMethod}</ol>
         </article>
