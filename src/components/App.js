@@ -24,7 +24,7 @@ class App extends Component {
 
 
     const listIngredients = ingredients.map(ingredient => {
-      return <li key={ingredient.id}>{ingredient.name}</li>;
+      return <li key={ingredient.id}>{ingredient.quantity}{ingredient.measurement} {ingredient.name}</li>;
     });
 
     const listMethod = method.map(step => {
