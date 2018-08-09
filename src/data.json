@@ -25,7 +25,7 @@
         {"id": 9, "name": "Season with salt and cracked black pepper"}
       ],
       "image": "/images/salmonLinguine.jpg",
-      "cooking time": "25 minutes"
+      "cookingTime": "25 minutes"
     },
     {
       "id": "greenChickenCurry",
