@@ -22,6 +22,7 @@ class App extends Component {
 
     const method = selectedRecipe.method;
 
+
     const listIngredients = ingredients.map(ingredient => {
       return <li key={ingredient.id}>{ingredient.name}</li>;
     });
@@ -30,20 +31,24 @@ class App extends Component {
       return <li key={step.id}>{step.name}</li>;
     });
 
-    console.log(selectedRecipe.image)
-
     return (
       <div className={styles.wrapper}>
         <h2 className={styles.header}>foood</h2>
         <div className={styles.menu}>
-          <Menu onChange={this.handleChange} />
+          <Menu onChange={this.handleChange}>
+            {data.recipes.map(recipe => (
+              <option key={recipe.id} value={recipe.id}>{recipe.title}</option>
+            ))}
+          </Menu>
         </div>
         <article className={styles.article}>
           <ul className={styles.ingredients}>{listIngredients}</ul>
           <ol className={styles.method}>{listMethod}</ol>
         </article>
-        <aside className={styles.aside}
-        style ={ { backgroundImage: "url(" + selectedRecipe.image + ")" }}>
+        <aside
+          className={styles.aside}
+          style={{ backgroundImage: 'url(' + selectedRecipe.image + ')' }}
+        >
           <img
             className={styles.foodImage}
             src={selectedRecipe.image}
