@@ -2,19 +2,15 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-
 .wrapper {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .1fr .1fr 1fr .1fr;
+  grid-template-rows: .1fr 1fr .1fr;
   grid-gap: 1px 1px;
-  grid-template-areas:  'header header'
-                        'menu menu'
-                        'article aside'
+  grid-template-areas:  'article aside'
                         'footer footer';
 }
-
 
 .main {
   flex: 1;
