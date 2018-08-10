@@ -1,14 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import './index.css';
-import AddRecipe from './pages/AddRecipe';
+import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-  <App>
-    <Route exact path="/add-recipe" component={AddRecipe} />
-  </App>
-    , document.getElementById('root'));
+
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
 registerServiceWorker();
