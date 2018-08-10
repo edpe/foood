@@ -37,7 +37,6 @@ class Home extends Component {
 
     return (
       <div className={styles.wrapper}>
-        <h2 className={styles.header}>foood</h2>
         <div className={styles.menu}>
           <Menu onChange={this.handleChange}>
             {data.recipes.map(recipe => (

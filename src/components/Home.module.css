@@ -15,15 +15,6 @@ body {
                         'footer footer';
 }
 
-.header {
-  grid-area: header;
-  font-family: garamond;
-  font-size: 4rem;
-  text-align: right;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-right: 2.5%;
-}
 
 .main {
   flex: 1;
