@@ -59,7 +59,7 @@ class Home extends Component {
           <img
             className={styles.foodImage}
             src={selectedRecipe.image}
-            alt="image of selected recipe"
+            alt="selected recipe"
           />
         </aside>
         <div className={styles.footer} />
