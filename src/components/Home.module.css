@@ -2,27 +2,14 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-
 .wrapper {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .1fr .1fr 1fr .1fr;
+  grid-template-rows: .1fr 1fr .1fr;
   grid-gap: 1px 1px;
-  grid-template-areas:  'header header'
-                        'menu menu'
-                        'article aside'
+  grid-template-areas:  'article aside'
                         'footer footer';
-}
-
-.header {
-  grid-area: header;
-  font-family: garamond;
-  font-size: 4rem;
-  text-align: right;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-right: 2.5%;
 }
 
 .main {
@@ -31,7 +18,6 @@ body {
 
 .menu {
   grid-area: menu;
-  padding-left: 2.5%;
 }
 
 .article {

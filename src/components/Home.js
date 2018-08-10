@@ -37,7 +37,7 @@ class Home extends Component {
 
     return (
       <div className={styles.wrapper}>
-        <h2 className={styles.header}>foood</h2>
+        <article className={styles.article}>
         <div className={styles.menu}>
           <Menu onChange={this.handleChange}>
             {data.recipes.map(recipe => (
@@ -47,7 +47,6 @@ class Home extends Component {
             ))}
           </Menu>
         </div>
-        <article className={styles.article}>
           <p>Cooking time {selectedRecipe.cookingTime}</p>
           <ul className={styles.ingredients}>{listIngredients}</ul>
           <ol className={styles.method}>{listMethod}</ol>
