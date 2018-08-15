@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-// import styles from './AddRecipe.module.css'
 import ItemService from './ItemService';
 
-
-class AddRecipe extends Component {
+class AddItem extends Component {
 
   constructor(props) {
       super(props);
@@ -21,7 +19,7 @@ class AddRecipe extends Component {
     handleSubmit(event) {
       event.preventDefault();
       this.addItemService.sendData(this.state.value);
-      this.props.history.push('/');
+      this.props.history.push('/index');
     }
 
     render() {
@@ -29,7 +27,7 @@ class AddRecipe extends Component {
         <div className="container">
           <form onSubmit={this.handleSubmit}>
             <label>
-              Add Recipe:
+              Add Item:
               <input type="text" value={this.state.value} onChange={this.handleChange} className="form-control"/>
             </label><br/>
             <input type="submit" value="Submit" className="btn btn-primary"/>
@@ -39,4 +37,4 @@ class AddRecipe extends Component {
     }
   }
 
-export default AddRecipe;
+export default AddItem;
