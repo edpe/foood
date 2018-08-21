@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import ItemService from './ItemService';
+import RecipeService from './RecipeService';
 
-class EditItem extends Component {
+class EditRecipe extends Component {
 
   constructor(props) {
       super(props);
-      this.addItemService = new ItemService();
+      this.addRecipeService = new RecipeService();
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.state = {value: '' };
@@ -28,7 +28,7 @@ class EditItem extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.addItemService.updateData(this.state.value,this.props.match.params.id);
+    this.addRecipeService.updateData(this.state.value,this.props.match.params.id);
     this.props.history.push('/index');
   }
 
@@ -47,4 +47,4 @@ class EditItem extends Component {
   }
 }
 
-export default EditItem;
+export default EditRecipe;

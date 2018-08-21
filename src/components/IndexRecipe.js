@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
-import ItemService from './ItemService';
+import RecipeService from './RecipeService';
 import axios from 'axios';
 import TableRow from './TableRow';
 
-class IndexItem extends Component {
+class IndexRecipe extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {value: '', items: ''};
-      this.addItemService = new ItemService();
+      this.state = {value: '', recipes: ''};
+      this.addRecipeService = new RecipeService();
     }
     componentDidMount(){
-      axios.get('http://localhost:4200/items')
+      axios.get('http://localhost:4200/recipes')
       .then(response => {
-        this.setState({ items: response.data });
+        this.setState({ recipes: response.data });
       })
       .catch(function (error) {
         console.log(error);
       })
     }
     tabRow(){
-      if(this.state.items instanceof Array){
-        return this.state.items.map(function(object, i){
+      if(this.state.recipes instanceof Array){
+        return this.state.recipes.map(function(object, i){
             return <TableRow obj={object} key={i} />;
         })
       }
@@ -46,4 +46,4 @@ class IndexItem extends Component {
     }
   }
 
-export default IndexItem;
+export default IndexRecipe;
