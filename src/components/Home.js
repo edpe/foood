@@ -31,8 +31,8 @@ class Home extends Component {
       );
     });
 
-    const listMethod = method.map(step => {
-      return <li key={step.id}>{step.name}</li>;
+    const listMethod = method.map(method => {
+      return <li key={method.id}>{method.step}</li>;
     });
 
     return (

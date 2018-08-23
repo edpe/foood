@@ -1,13 +1,14 @@
-import React, { Component } from "react";
-import RecipeService from "./RecipeService";
+import React, { Component } from 'react';
+import RecipeService from './RecipeService';
 
 class AddRecipe extends Component {
   constructor(props) {
     super(props);
     this.state = {
       recipe: {
-        title: "",
-        duration: ""
+        title: '',
+        image: '',
+        duration: ''
       }
     };
     this.addRecipeService = new RecipeService();
@@ -17,7 +18,7 @@ class AddRecipe extends Component {
   }
 
   handleChange(event) {
-    const target = event.target;
+    const target = event.currentTarget;
     const value = target.value;
     const name = target.name;
 
@@ -32,7 +33,7 @@ class AddRecipe extends Component {
   handleSubmit(event) {
     event.preventDefault();
     this.addRecipeService.sendData(this.state.recipe);
-    this.props.history.push("/index");
+    this.props.history.push('/index');
   }
 
   render() {
@@ -40,7 +41,7 @@ class AddRecipe extends Component {
       <div className="container">
         <form onSubmit={this.handleSubmit}>
           <label>
-            Recipe Title:
+            Title:
             <input
               name="title"
               type="text"
@@ -50,6 +51,7 @@ class AddRecipe extends Component {
             />
           </label>
           <br />
+          
           <label>
             Cooking Time:
             <input
@@ -61,6 +63,19 @@ class AddRecipe extends Component {
             />
           </label>
           <br />
+
+          <label>
+            Image:
+            <input
+              name="image"
+              type="text"
+              value={this.state.image}
+              onChange={this.handleChange}
+              className="form-control"
+            />
+          </label>
+          <br />
+
           <input type="submit" value="Submit" className="btn btn-primary" />
         </form>
       </div>
