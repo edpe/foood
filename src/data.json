@@ -1,53 +1,53 @@
 {
   "recipes": [
     {
-      "id": "salmonLinguine",
+      "_id": "salmonLinguine",
       "title": "Salmon Linguine",
       "ingredients": [
-        {"id": 1, "name": "asparagus", "quantity": "1", "measurement": " bunch of"},
-        {"id": 2, "name": "courgette", "quantity": "1", "measurement": ""},
-        {"id": 3, "name": "garlic", "quantity": "2", "measurement": " cloves of" },
-        {"id": 4, "name": "single cream", "quantity": "300", "measurement": "ml"},
-        {"id": 5, "name": "dill", "quantity": "1", "measurement": " small bunch of"},
-        {"id": 6, "name": "lemon", "quantity": "1", "measurement": " juice and zest of"},
-        {"id": 7, "name": "linguine", "quantity": "100", "measurement": "g"},
-        {"id": 8, "name": "salmon", "quantity": "100", "measurement": "g"}
+        {"_id": 1, "title": "asparagus", "quantity": "1", "measurement": " bunch of"},
+        {"_id": 2, "title": "courgette", "quantity": "1", "measurement": ""},
+        {"_id": 3, "title": "garlic", "quantity": "2", "measurement": " cloves of" },
+        {"_id": 4, "title": "single cream", "quantity": "300", "measurement": "ml"},
+        {"_id": 5, "title": "dill", "quantity": "1", "measurement": " small bunch of"},
+        {"_id": 6, "title": "lemon", "quantity": "1", "measurement": " juice and zest of"},
+        {"_id": 7, "title": "linguine", "quantity": "100", "measurement": "g"},
+        {"_id": 8, "title": "salmon", "quantity": "100", "measurement": "g"}
       ],
       "method": [
-        {"id": 1, "step": "Put the linguine on to boil"},
-        {"id": 2, "step": "Grate the courgette and finely slice the asparagus"},
-        {"id": 3, "step": "Put a knob of butter in a pan and fry the crushed garlic over a moderate heat."},
-        {"id": 4, "step": "Add the asparagus and fry for a minute or so"},
-        {"id": 5, "step": "Then add the courgette to the pan and fry for another few minutes"},
-        {"id": 6, "step": "Pour in the single cream and add the finely chopped dill"},
-        {"id": 7, "step": "Slice the smoked salmon into thin strips and add it to the pan"},
-        {"id": 8, "step": "Grate in some lemon zest and a good squeeze of the juice"},
-        {"id": 9, "step": "Season with salt and cracked black pepper"}
+        {"_id": 1, "step": "Put the linguine on to boil"},
+        {"_id": 2, "step": "Grate the courgette and finely slice the asparagus"},
+        {"_id": 3, "step": "Put a knob of butter in a pan and fry the crushed garlic over a moderate heat."},
+        {"_id": 4, "step": "Add the asparagus and fry for a minute or so"},
+        {"_id": 5, "step": "Then add the courgette to the pan and fry for another few minutes"},
+        {"_id": 6, "step": "Pour in the single cream and add the finely chopped dill"},
+        {"_id": 7, "step": "Slice the smoked salmon into thin strips and add it to the pan"},
+        {"_id": 8, "step": "Grate in some lemon zest and a good squeeze of the juice"},
+        {"_id": 9, "step": "Season with salt and cracked black pepper"}
       ],
       "image": "/images/salmonLinguine.jpg",
-      "cookingTime": "25 minutes"
+      "duration": "25 minutes"
     },
     {
-      "id": "greenChickenCurry",
+      "_id": "greenChickenCurry",
       "title": "Thai Green Chicken Curry",
       "ingredients": [
-        {"id": 1, "name": "Chicken breasts"},
-        {"id": 2, "name": "Green Peppers"},
-        {"id": 3, "name": "Shallots"},
-        {"id": 4, "name": "Coriander"},
-        {"id": 5, "name": "Green Chilli"},
-        {"id": 6, "name": "Lime Leaves"},
-        {"id": 7, "name": "Lemongrass"},
-        {"id": 8, "name": "Garlic"},
-        {"id": 10, "name": "Ginger"},
-        {"id": 11, "name": "Coconut Milk"},
-        {"id": 12, "name": "Carrots"},
-        {"id": 13, "name": "Green Beans"},
-        {"id": 14, "name": "Baby Sweetcorn"}
+        {"_id": 1, "name": "Chicken breasts"},
+        {"_id": 2, "name": "Green Peppers"},
+        {"_id": 3, "name": "Shallots"},
+        {"_id": 4, "name": "Coriander"},
+        {"_id": 5, "name": "Green Chilli"},
+        {"_id": 6, "name": "Lime Leaves"},
+        {"_id": 7, "name": "Lemongrass"},
+        {"_id": 8, "name": "Garlic"},
+        {"_id": 10, "name": "Ginger"},
+        {"_id": 11, "name": "Coconut Milk"},
+        {"_id": 12, "name": "Carrots"},
+        {"_id": 13, "name": "Green Beans"},
+        {"_id": 14, "name": "Baby Sweetcorn"}
       ],
       "method": [
-        {"id": 1, "step": "Put the shallots, peppers, garlic, chilli, ginger and lemongrass in a food processor and blend to a paste"},
-        {"id": 2, "step": "Mix everything together and cook it"}
+        {"_id": 1, "step": "Put the shallots, peppers, garlic, chilli, ginger and lemongrass in a food processor and blend to a paste"},
+        {"_id": 2, "step": "Mix everything together and cook it"}
       ],
 
       "image": "/images/greenChickenCurry.jpg"

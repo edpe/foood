@@ -8,6 +8,9 @@ class RecipeService {
       .catch(err => console.log(err));
   }
 
+  /**
+    TODO: Rewrite so that the required functionality is in place.
+   */
   updateData(data, id) {
     axios
       .post("http://localhost:4200/recipes/update/" + id, {
@@ -25,6 +28,11 @@ class RecipeService {
         })
       )
       .catch(err => console.log(err));
+  }
+
+  async getRecipes(){
+    const result = await axios.get('http://localhost:4200/recipes');
+    return result.data;
   }
 
   deleteData(id) {
