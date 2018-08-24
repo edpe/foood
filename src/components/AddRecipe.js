@@ -32,47 +32,30 @@ class AddRecipe extends Component {
     }));
   }
 
-  onIngredientFormChange = evt => {
-    const currentTarget = evt.currentTarget;
-    const value = currentTarget.value;
-    const name = currentTarget.name;
-
-    console.log(this.state);
+  onIngredientFormChange(evt, targetIndex) {
+    const currentTarget = evt.currentTarget
 
     this.setState(state => {
-      let new_state = {
+      const ingredients = state.recipe.ingredients;
+      const ingredientField = currentTarget.name;
+      const ingredientValue = currentTarget.value;
+      console.log(this.state)
+      return {
         recipe: {
-          ...state.recipe
+          ...this.state.recipe,
+          ingredients: ingredients.map((oldIngredientForm, i) => {
+            if (i === targetIndex) {
+              return {
+                ...oldIngredientForm,
+                [ingredientField]: ingredientValue
+              };
+            }
+            return oldIngredientForm;
+          })
         }
       };
-      new_state["recipe"]["ingredients"][0]["title"] = value;
-      return new_state;
     });
-  };
-  //
-  //   this.setState(oldState => {
-  //     const ingredients = oldState.recipe.ingredients;
-  //     const ingredientField = currentTarget.name;
-  //     const ingredientValue = currentTarget.value;
-  //     const mythis = this;
-  //
-  //     return {
-  //       recipe: {
-  //         ...this.state.recipe,
-  //         ingredients: ingredients.map((oldIngredientForm, i) => {
-  //           if (i === targetIndex) {
-  //             return {
-  //               ...oldIngredientForm,
-  //               [ingredientField]: ingredientValue,
-  //             };
-  //           }
-  //
-  //           return oldIngredientForm;
-  //         })
-  //       }
-  //     };
-  //   });
-  // };
+  }
 
   handleSubmit(event) {
     event.preventDefault();
@@ -117,22 +100,22 @@ class AddRecipe extends Component {
             />
           ))}
           {
-              <button
-                type="button"
-                onClick={() =>
-                  this.setState(oldState => ({
-                    recipe: {
-                      ...oldState.recipe,
-                      ingredients: oldState.recipe.ingredients.concat({
-                        title: "",
-                        measurement: "",
-                        quantity: ""
-                      })
-                    }
-                  }))
-                }
-                children="Add Ingredient"
-              />
+            <button
+              type="button"
+              onClick={() =>
+                this.setState(oldState => ({
+                  recipe: {
+                    ...oldState.recipe,
+                    ingredients: oldState.recipe.ingredients.concat({
+                      title: "",
+                      measurement: "",
+                      quantity: ""
+                    })
+                  }
+                }))
+              }
+              children="Add Ingredient"
+            />
           }
 
           {
@@ -143,10 +126,7 @@ class AddRecipe extends Component {
                   this.setState(oldState => ({
                     recipe: {
                       ...oldState.recipe,
-                      ingredients: oldState.recipe.ingredients.filter((e,i,a) => {
-                        console.log(i, a)
-                        return i !== a.length - 1;
-                      })
+                      ingredients: oldState.recipe.ingredients.slice(0, -1)
                     }
                   }))
                 }
@@ -155,8 +135,6 @@ class AddRecipe extends Component {
               <br />
             </>
           }
-
-
 
           <label>
             Image:
