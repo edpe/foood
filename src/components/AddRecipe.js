@@ -143,7 +143,10 @@ class AddRecipe extends Component {
                   this.setState(oldState => ({
                     recipe: {
                       ...oldState.recipe,
-                      ingredients: oldState.recipe.ingredients.slice(-1)
+                      ingredients: oldState.recipe.ingredients.filter((e,i,a) => {
+                        console.log(i, a)
+                        return i !== a.length - 1;
+                      })
                     }
                   }))
                 }
