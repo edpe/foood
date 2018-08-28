@@ -1,13 +1,9 @@
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .wrapper {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .1fr 1fr .1fr;
-  grid-gap: 1px 1px;
+  grid-template-rows: 1fr 7fr 1fr;
+  grid-gap: 1px;
   grid-template-areas:  'article aside'
                         'footer footer';
 }
@@ -22,7 +18,7 @@ body {
 
 .article {
   grid-area: article;
-  padding-left: 5%;
+  padding-left: 2rem;
 }
 
 .ingredients {
@@ -35,16 +31,15 @@ body {
 
 .method{
   flex: 50%;
-  text-align: center-left;
   list-style-type: none;
   font-size: 1.5rem;
-  padding-left: 0%;
+  padding-left: 0px;
 }
 
 .aside {
   grid-area: aside;
   background-size: cover;
-  padding-right: 5%;
+  padding-right: 2rem;
   position: center;
 }
 
