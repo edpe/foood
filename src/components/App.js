@@ -7,8 +7,8 @@ import styles from './App.module.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h2 className={styles.header}>foood</h2>
+      <div className={styles.main}>
+        <h1 className={styles.header}>foood</h1>
         <Navigation />
         <Content />
       </div>

@@ -5,7 +5,6 @@ const Menu = props => (
   <div>
     <select
       className={styles.chooseRecipe}
-      id="recipe-select"
       onChange={props.onChange}
     >
       {props.children}
